@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+public class Tarea6 {
+	public static void main(String args[]){
+		
+		String strNumero1 = JOptionPane.showInputDialog("Ingrese el numero 1");
+		String strNumero2 = JOptionPane.showInputDialog("Ingrese el numero 2");
+		try{
+			int numero1 = Integer.parseInt(strNumero1);
+			int numero2 = Integer.parseInt(strNumero2);
+			int suma = numero1 + numero2;
+			
+			JOptionPane.showMessageDialog(null,"La suma es: "+suma);
+			
+		}catch(NumberFormatException ex){
+			JOptionPane.showMessageDialog(null,"Error solo numeros");
+		}finally{
+			System.out.println("Ese es el final y siempre se ejecuta ");
+		}
+	}
+
+}

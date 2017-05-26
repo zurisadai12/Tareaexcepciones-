@@ -1,0 +1,64 @@
+import java.util.Scanner;
+public class Tarea7 {
+	public static void main(String[] args) {
+	   	Scanner sc = new Scanner(System.in);
+		   String n = "";
+
+		   String mensaje = "";
+		   	
+		   	
+		   		
+		   	try{
+		   		System.out.println("Escriba la calificación con número");	
+		   		n=sc.nextLine();
+		   		int califNum=Integer.parseInt(n);
+
+
+		   		String calif;
+
+		   		switch(califNum){
+
+		   			
+		   			case 0: calif="NA";break;
+
+		   			case 1: calif="NA";break;
+
+		   			case 2: calif="NA";break;
+
+		   			case 3: calif="NA";break;
+
+		   			case 4: calif="NA";break;
+
+		   			case 5: calif="NA";break;
+
+		   			case 6: calif="S";break;
+
+		   			case 7: calif="S";break;
+
+		   			case 8: calif="B";break;
+
+		   			case 9: calif="MB";break;
+
+		   			case 10: calif="MB";break;
+
+		   			default: calif="Inválida";break;
+				
+
+		   		}
+
+		   		mensaje="La calificación es: "+calif; 
+
+		   	}catch(NumberFormatException ex){
+
+		   		mensaje="No escribió un número";
+
+		   	}
+
+		   	System.out.println(mensaje);
+		   	
+		   	
+		}
+
+
+
+		}

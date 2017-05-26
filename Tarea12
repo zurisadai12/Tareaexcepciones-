@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Tarea12 {
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		int tiempo=0;
+		int velocidad=0;
+		int distancia=1;
+		
+		System.out.println("Ingresa el valor de la distancia");
+		distancia = sc.nextInt();
+		System.out.println("Ingresa el valor de la velocidad");
+		velocidad = sc.nextInt();
+		try {
+			System.out.println("Programa para calcular la velocidad - Formula Tiempo=Distancia/Velocidad");
+			tiempo=distancia/velocidad;
+			System.out.println("El tiempo es. "+tiempo);
+		} catch (ArithmeticException e) {
+			System.out.println("Error la velocidad no puede ser "+velocidad+" no se puede dividi entre 0 ");
+		}finally{
+			System.out.println("Fin del proceso");
+		}
+		
+		
+	}
+
+}
